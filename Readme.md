@@ -1,5 +1,5 @@
 ## Hi, I’m Mohammed Ahsan 👋
-**Platform Engineer | Cloud-Native Engineer | DevOps Engineer**
+**Platform Engineer | Cloud-Native Engineer | DevSecOps Engineer**
 
 I build **secure, automated cloud platforms** that empower developers and help businesses innovate safely.
 
@@ -15,15 +15,7 @@ I build **secure, automated cloud platforms** that empower developers and help b
 ---
 
 ### Contact
-Questions, ideas, or a friendly hello — **reach out via email**, and I’ll get back to you promptly!  
+Questions, Ideas, or a Friendly Hello — **reach out via email**, and I’ll get back to you promptly!  
 
 📧 Email: [mdahsan060@gmail.com]  
 🔗 Portfolio: [https://ahsan598.github.io/SnapFolio/]  
-
-
----
-
-Thanks!
-
-Author: BootstrapMade.com
-License: https://bootstrapmade.com/license/
