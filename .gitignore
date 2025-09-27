@@ -1,0 +1,36 @@
+# =========================
+# Node & build dependencies (if you use npm/yarn)
+node_modules/
+package-lock.json
+yarn.lock
+
+
+# =========================
+# PHP backend scripts (keep them private)
+forms/contact.php
+assets/vendor/php-email-form/
+
+# =========================
+# OS / Editor specific
+.DS_Store
+Thumbs.db
+*.log
+*.env
+
+# =========================
+# IDE configs
+.git/
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# =========================
+# Dist/Build outputs (if you generate)
+dist/
+build/
+
+# =========================
+# Misc (optional)
+*.bak
+*.tmp
