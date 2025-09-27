@@ -7,8 +7,8 @@ I build **secure, automated cloud platforms** that empower developers and help b
 ---
 
 ### Skills
-- **Cloud & Platforms:** AWS, EKS, Kubernetes, Helm, Docker  
-- **CI/CD & Automation:** GitLab CI, Jenkins, Terraform, Ansible, Argo CD  
+- **Cloud & DevOps:** AWS, Kubernetes, Terraform, Git, Docker, Linux
+- **CI/CD & GitOps:** GitLab CI, Jenkins, Argo CD  
 - **Monitoring & Logging:** ELK Stack, Dynatrace, Datadog, Grafana 
-- **Security & Compliance:** RBAC, Pod Security Policies, IAM
-- **Other Tools:** Linux, Python, Bash, Git
+- **Security & Compliance:** RBAC, IAM Policies
+- **Automation & Programming:** Ansible, Python, Bash
