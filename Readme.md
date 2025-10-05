@@ -1,14 +1,19 @@
-## Portfolio Website
+# My Portfolio
 
-**Platform Engineer | Cloud-Native Engineer | DevSecOps Engineer**
+A personal portfolio website built with **Bootstrap 5** to showcase my projects, skills, and experience. Fully responsive and optimized for both desktop and mobile.
 
-I build **secure, automated cloud platforms** that empower developers and help businesses innovate safely.
 
----
+## Features:
+- Responsive design with **Bootstrap 5**
+- Project showcase with cards and modals
+- Smooth scrolling navigation
+- Clean, minimal, professional layout
 
-### Skills
-- **Cloud & DevOps:** AWS, Kubernetes, Terraform, Git, Docker, Linux
-- **CI/CD & GitOps:** GitLab CI, Jenkins, Argo CD  
-- **Monitoring & Logging:** ELK Stack, Dynatrace, Datadog, Grafana 
-- **Security & Compliance:** RBAC, IAM Policies
-- **Automation & Programming:** Ansible, Python, Bash
+## Technologies Used
+- HTML5, CSS3
+- Bootstrap 5
+- JavaScript
+
+
+## Project URL
+View My Portfolio: [Live Demo](https://yourusername.github.io/portfolio/)
