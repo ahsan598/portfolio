@@ -1,8 +1,10 @@
 @charset "UTF-8";
 
-/* Fonts */
+/* ==========================================================================
+   1. Fonts & Global CSS Variables
+   ========================================================================== */
 :root {
-  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
   --heading-font: "Ubuntu", sans-serif;
   --nav-font: "Nunito", sans-serif;
   scroll-behavior: smooth;
@@ -94,9 +96,9 @@
   }
 }
 
-/*--------------------------------------------------------------
-# General Styling & Shared Classes
---------------------------------------------------------------*/
+/* ==========================================================================
+   2. General Styling & Shared Classes
+   ========================================================================== */
 body {
   color: var(--default-color);
   background-color: var(--background-color);
@@ -114,18 +116,12 @@ a:hover {
   text-decoration: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   color: var(--heading-color);
   font-family: var(--heading-font);
 }
 
-/* PHP Email Form Messages
-------------------------------*/
+/* PHP Email Form Messages */
 .php-email-form .error-message {
   display: none;
   background: #df1529;
@@ -167,21 +163,14 @@ h6 {
 }
 
 @keyframes php-email-form-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
-/*--------------------------------------------------------------
-# Global Header
---------------------------------------------------------------*/
+/* ==========================================================================
+   3. Global Header
+   ========================================================================== */
 .header {
-  --background-color: #1b1b1b;
-  --contrast-color: #444444;
   color: var(--default-color);
   position: fixed;
   top: 0;
@@ -197,7 +186,7 @@ h6 {
 .header .header-container {
   border-radius: 20px;
   padding: 15px;
-  background-color: var(--background-color);
+  background-color: var(--surface-color);
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 80%);
 }
 
@@ -226,9 +215,8 @@ h6 {
 }
 
 @media (min-width: 1200px) {
-
-  .header~main,
-  .header~#footer {
+  .header ~ main,
+  .header ~ #footer {
     margin-left: 330px;
   }
 }
@@ -266,9 +254,9 @@ h6 {
   background-color: color-mix(in srgb, var(--accent-color) 90%, white 15%);
 }
 
-/*--------------------------------------------------------------
-# Navigation Menu
---------------------------------------------------------------*/
+/* ==========================================================================
+   4. Navigation Menu
+   ========================================================================== */
 .mobile-nav-toggle {
   display: none;
 }
@@ -352,7 +340,7 @@ h6 {
 
 .navmenu .dropdown a,
 .navmenu .dropdown a:focus {
-  color: --nav-dropdown-color;
+  color: var(--nav-dropdown-color);
 }
 
 .navmenu .dropdown a:hover,
@@ -369,22 +357,23 @@ h6 {
   margin: 5px 10px;
   background-color: var(--nav-dropdown-background-color);
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-radius: 8px;
   box-shadow: none;
   transition: all 0.5s ease-in-out;
 }
 
 .navmenu .dropdown ul ul {
-  background-color: rgba(33, 37, 41, 0.1);
+  background-color: color-mix(in srgb, var(--default-color), transparent 95%);
 }
 
-.navmenu .dropdown>.dropdown-active {
+.navmenu .dropdown > .dropdown-active {
   display: block;
-  background-color: rgba(33, 37, 41, 0.03);
+  background-color: color-mix(in srgb, var(--default-color), transparent 97%);
 }
 
-/*--------------------------------------------------------------
-# Global Footer
---------------------------------------------------------------*/
+/* ==========================================================================
+   5. Global Footer
+   ========================================================================== */
 .footer {
   color: var(--default-color);
   background-color: var(--background-color);
@@ -408,9 +397,9 @@ h6 {
   text-align: center;
 }
 
-/*--------------------------------------------------------------
-# Preloader
---------------------------------------------------------------*/
+/* ==========================================================================
+   6. Preloader & Scroll Top Button
+   ========================================================================== */
 #preloader {
   position: fixed;
   inset: 0;
@@ -434,18 +423,10 @@ h6 {
 }
 
 @keyframes animate-preloader {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
-/*--------------------------------------------------------------
-# Scroll Top Button
---------------------------------------------------------------*/
 .scroll-top {
   position: fixed;
   visibility: hidden;
@@ -477,18 +458,15 @@ h6 {
   bottom: 15px;
 }
 
-/*--------------------------------------------------------------
-# Disable aos animation delay on mobile devices
---------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
 }
 
-/*--------------------------------------------------------------
-# Global Page Titles & Breadcrumbs
---------------------------------------------------------------*/
+/* ==========================================================================
+   7. Page Titles & Sections
+   ========================================================================== */
 .page-title {
   color: var(--default-color);
   padding: 25px 0 0 0;
@@ -515,31 +493,24 @@ h6 {
   font-weight: 400;
 }
 
-.page-title .breadcrumbs ol li+li {
+.page-title .breadcrumbs ol li + li {
   padding-left: 10px;
 }
 
-.page-title .breadcrumbs ol li+li::before {
+.page-title .breadcrumbs ol li + li::before {
   content: "/";
   display: inline-block;
   padding-right: 10px;
   color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
 
-/*--------------------------------------------------------------
-# Global Sections
---------------------------------------------------------------*/
-section,
-.section {
+section, .section {
   color: var(--default-color);
   background-color: var(--background-color);
   padding: 60px 0;
   overflow: clip;
 }
 
-/*--------------------------------------------------------------
-# Global Section Titles
---------------------------------------------------------------*/
 .section-title {
   text-align: center;
   padding-bottom: 60px;
@@ -573,9 +544,9 @@ section,
   margin-bottom: 0;
 }
 
-/*--------------------------------------------------------------
-# Hero Section
---------------------------------------------------------------*/
+/* ==========================================================================
+   8. Hero Section
+   ========================================================================== */
 .hero {
   min-height: 100vh;
   position: relative;
@@ -606,22 +577,9 @@ section,
   animation: float 6s ease-in-out infinite;
 }
 
-@media (max-width: 768px) {
-  .hero .floating-card {
-    padding: 10px 15px;
-    font-size: 0.9rem;
-  }
-}
-
 .hero .floating-card i {
   font-size: 1.5rem;
   color: var(--accent-color);
-}
-
-@media (max-width: 768px) {
-  .hero .floating-card i {
-    font-size: 1.2rem;
-  }
 }
 
 .hero .floating-card span {
@@ -635,24 +593,10 @@ section,
   animation-delay: 0s;
 }
 
-@media (max-width: 768px) {
-  .hero .floating-card.card-1 {
-    top: 5%;
-    left: -5%;
-  }
-}
-
 .hero .floating-card.card-2 {
   top: 60%;
   right: -15%;
   animation-delay: 2s;
-}
-
-@media (max-width: 768px) {
-  .hero .floating-card.card-2 {
-    top: 70%;
-    right: -10%;
-  }
 }
 
 .hero .floating-card.card-3 {
@@ -661,25 +605,10 @@ section,
   animation-delay: 4s;
 }
 
-@media (max-width: 768px) {
-  .hero .floating-card.card-3 {
-    bottom: 10%;
-    left: 0%;
-  }
-}
-
 @keyframes float {
-
-  0%,
-  100% {
-    transform: translateY(0px);
-  }
-
-  50% {
-    transform: translateY(-20px);
-  }
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
 }
-
 
 .hero .background-elements {
   position: absolute;
@@ -724,21 +653,6 @@ section,
   position: relative;
   z-index: 3;
 }
-
-/* .hero .hero-text h1 .accent-text {
-  color: var(--accent-color);
-  position: relative;
-}
-
-.hero .hero-text h1 .accent-text::after {
-  content: "";
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  background: linear-gradient(90deg, var(--accent-color), color-mix(in srgb, var(--accent-color), transparent 50%));
-} */
 
 .hero .hero-text h1 {
   font-size: 52px;
@@ -868,48 +782,14 @@ section,
   z-index: 2;
 }
 
-@keyframes float {
-
-  0%,
-  100% {
-    transform: translateY(0px);
-  }
-
-  50% {
-    transform: translateY(-20px);
-  }
-}
-
-@keyframes floatIcon {
-
-  0%,
-  100% {
-    transform: translateY(0px) rotate(0deg);
-  }
-
-  50% {
-    transform: translateY(-10px) rotate(5deg);
-  }
-}
-
 @media (max-width: 992px) {
   .hero .hero-text {
     text-align: center;
     margin-bottom: 50px;
   }
-
-  .hero .hero-text h1 {
-    font-size: 56px;
-  }
-
-  .hero .hero-text h2 {
-    font-size: 28px;
-  }
-
-  .hero .hero-text .lead {
-    font-size: 20px;
-  }
-
+  .hero .hero-text h1 { font-size: 56px; }
+  .hero .hero-text h2 { font-size: 28px; }
+  .hero .hero-text .lead { font-size: 20px; }
   .hero .hero-visual .profile-container {
     width: 350px;
     height: 350px;
@@ -917,55 +797,25 @@ section,
 }
 
 @media (max-width: 768px) {
-  .hero .hero-text h1 {
-    font-size: 42px;
-  }
-
-  .hero .hero-text h2 {
-    font-size: 24px;
-  }
-
-  .hero .hero-text .lead {
-    font-size: 18px;
-  }
-
-  .hero .hero-text .description {
-    font-size: 16px;
-  }
-
-  .hero .hero-actions {
-    justify-content: center;
-  }
-
-  .hero .hero-actions .btn {
-    padding: 12px 25px;
-    font-size: 14px;
-  }
-
-  .hero .hero-visual .profile-container {
-    width: 300px;
-    height: 300px;
-  }
-
-  .hero .background-elements .bg-circle.circle-1 {
-    width: 200px;
-    height: 200px;
-  }
-
-  .hero .background-elements .bg-circle.circle-2 {
-    width: 150px;
-    height: 150px;
-  }
-
-  .hero .background-elements .bg-circle.circle-3 {
-    width: 100px;
-    height: 100px;
-  }
+  .hero .floating-card { padding: 10px 15px; font-size: 0.9rem; }
+  .hero .floating-card i { font-size: 1.2rem; }
+  .hero .floating-card.card-1 { top: 5%; left: -5%; }
+  .hero .floating-card.card-2 { top: 70%; right: -10%; }
+  .hero .floating-card.card-3 { bottom: 10%; left: 0%; }
+  .hero .hero-text h1 { font-size: 42px; }
+  .hero .hero-text h2 { font-size: 24px; }
+  .hero .hero-text .lead { font-size: 18px; }
+  .hero .hero-text .description { font-size: 16px; }
+  .hero .hero-actions { justify-content: center; }
+  .hero .hero-actions .btn { padding: 12px 25px; font-size: 14px; }
+  .hero .hero-visual .profile-container { width: 300px; height: 300px; }
+  .hero .background-elements .bg-circle.circle-1 { width: 200px; height: 200px; }
+  .hero .background-elements .bg-circle.circle-2 { width: 150px; height: 150px; }
 }
 
-/*--------------------------------------------------------------
-# About Section
---------------------------------------------------------------*/
+/* ==========================================================================
+   9. About Section
+   ========================================================================== */
 .about .profile-card {
   background: linear-gradient(135deg, var(--surface-color) 0%, color-mix(in srgb, var(--surface-color), var(--accent-color) 5%) 100%);
   border-radius: 2rem;
@@ -988,9 +838,7 @@ section,
 }
 
 @media (max-width: 991px) {
-  .about .profile-card {
-    margin-bottom: 3rem;
-  }
+  .about .profile-card { margin-bottom: 3rem; }
 }
 
 .about .profile-header {
@@ -1082,9 +930,7 @@ section,
 }
 
 @media (max-width: 991px) {
-  .about .about-content {
-    padding-left: 0;
-  }
+  .about .about-content { padding-left: 0; }
 }
 
 .about .about-content .section-header {
@@ -1111,9 +957,7 @@ section,
 }
 
 @media (max-width: 768px) {
-  .about .about-content .section-header h2 {
-    font-size: 1.875rem;
-  }
+  .about .about-content .section-header h2 { font-size: 1.875rem; }
 }
 
 .about .about-content .description {
@@ -1130,43 +974,6 @@ section,
 .about .about-content .description p:last-child {
   margin-bottom: 0;
 }
-
-/* .about .stats-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  margin-bottom: 2.5rem;
-  padding: 2rem;
-  background-color: var(--surface-color);
-  border-radius: 1.5rem;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-}
-
-@media (max-width: 768px) {
-  .about .stats-grid {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-    text-align: center;
-  }
-}
-
-.about .stats-grid .stat-item {
-  text-align: center;
-}
-
-.about .stats-grid .stat-item .stat-number {
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--accent-color);
-  display: block;
-  margin-bottom: 0.5rem;
-}
-
-.about .stats-grid .stat-item .stat-label {
-  font-size: 0.875rem;
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
-  font-weight: 500;
-} */
 
 .about .details-grid {
   margin-bottom: 2.5rem;
@@ -1245,10 +1052,9 @@ section,
   transform: translateY(-2px);
 }
 
-/*--------------------------------------------------------------
-# Skills Icon Cards Styling
---------------------------------------------------------------*/
-/* Category Title Styling */
+/* ==========================================================================
+   10. Skills Section
+   ========================================================================== */
 .skills .category-title {
   font-size: 1.25rem;
   font-weight: 700;
@@ -1261,7 +1067,6 @@ section,
   padding-bottom: 0.5rem;
 }
 
-/* Skills Section Card Styling */
 .skills .skills-card {
   background: linear-gradient(135deg, var(--surface-color) 0%, color-mix(in srgb, var(--surface-color), var(--accent-color) 5%) 100%);
   border-radius: 1.5rem;
@@ -1295,7 +1100,6 @@ section,
   box-shadow: 0 15px 35px color-mix(in srgb, var(--accent-color), transparent 85%);
 }
 
-/* Image Icons Custom Size & Hover Behavior */
 .skills .skills-card .skill-icon-img {
   width: 45px;
   height: 45px;
@@ -1316,9 +1120,9 @@ section,
   letter-spacing: 0.2px;
 }
 
-/*--------------------------------------------------------------
-# Resume Section
---------------------------------------------------------------*/
+/* ==========================================================================
+   11. Resume Section
+   ========================================================================== */
 .resume .section-header {
   margin-bottom: 2.5rem;
 }
@@ -1527,64 +1331,6 @@ section,
   line-height: 1.5;
 }
 
-@media (max-width: 992px) {
-
-  .resume .experience-section,
-  .resume .education-section {
-    padding-left: 0;
-    padding-right: 0;
-    margin-bottom: 3rem;
-  }
-
-  .resume .section-header h2 {
-    font-size: 1.6rem;
-  }
-
-  .resume .experience-cards .experience-card .card-header {
-    flex-direction: column;
-    gap: 0.8rem;
-  }
-
-  .resume .experience-cards .experience-card .card-header .duration {
-    align-self: flex-start;
-  }
-
-  .resume .education-timeline .education-item .education-content .degree-header {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  .resume .education-timeline .education-item .education-content .degree-header .year {
-    align-self: flex-start;
-  }
-}
-
-@media (max-width: 576px) {
-  .resume .section-header h2 {
-    font-size: 1.4rem;
-  }
-
-  .resume .section-header h2 i {
-    font-size: 1.2rem;
-  }
-
-  .resume .experience-cards .experience-card {
-    padding: 1.3rem;
-  }
-
-  .resume .education-timeline .timeline-track {
-    left: 0.5rem;
-  }
-
-  .resume .education-timeline .education-item {
-    padding-left: 2rem;
-  }
-
-  .resume .education-timeline .education-item .timeline-marker {
-    left: 0;
-  }
-}
-
 .resume .resume-section {
   margin-bottom: 3rem;
 }
@@ -1600,20 +1346,45 @@ section,
   color: var(--accent-color);
 }
 
-@media (max-width: 991.98px) {
-  .resume .resume-side {
-    margin-bottom: 2rem;
+@media (max-width: 992px) {
+  .resume .experience-section,
+  .resume .education-section {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 3rem;
   }
+
+  .resume .section-header h2 { font-size: 1.6rem; }
+  .resume .experience-cards .experience-card .card-header {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  .resume .experience-cards .experience-card .card-header .duration { align-self: flex-start; }
+  .resume .education-timeline .education-item .education-content .degree-header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .resume .education-timeline .education-item .education-content .degree-header .year { align-self: flex-start; }
 }
 
+@media (max-width: 576px) {
+  .resume .section-header h2 { font-size: 1.4rem; }
+  .resume .section-header h2 i { font-size: 1.2rem; }
+  .resume .experience-cards .experience-card { padding: 1.3rem; }
+  .resume .education-timeline .timeline-track { left: 0.5rem; }
+  .resume .education-timeline .education-item { padding-left: 2rem; }
+  .resume .education-timeline .education-item .timeline-marker { left: 0; }
+}
 
-/*--------------------------------------------------------------
-# Portfolio Section
---------------------------------------------------------------*/
+@media (max-width: 991.98px) {
+  .resume .resume-side { margin-bottom: 2rem; }
+}
+
+/* ==========================================================================
+   12. Portfolio Section
+   ========================================================================== */
 @media (max-width: 991px) {
-  .portfolio .filter-sidebar {
-    margin-bottom: 30px;
-  }
+  .portfolio .filter-sidebar { margin-bottom: 30px; }
 }
 
 .portfolio .filters-wrapper {
@@ -1624,9 +1395,7 @@ section,
 }
 
 @media (max-width: 991px) {
-  .portfolio .filters-wrapper {
-    padding: 20px;
-  }
+  .portfolio .filters-wrapper { padding: 20px; }
 }
 
 .portfolio .portfolio-filters {
@@ -1772,9 +1541,9 @@ section,
   transform: translateY(0);
 }
 
-/*--------------------------------------------------------------
-# Contact Section
---------------------------------------------------------------*/
+/* ==========================================================================
+   13. Contact Section
+   ========================================================================== */
 .contact .info-box {
   background-color: var(--accent-color);
   color: var(--contrast-color);
@@ -1790,9 +1559,7 @@ section,
 }
 
 @media (max-width: 767.98px) {
-  .contact .info-box h3 {
-    font-size: 1.75rem;
-  }
+  .contact .info-box h3 { font-size: 1.75rem; }
 }
 
 .contact .info-box p {
@@ -1805,9 +1572,7 @@ section,
 }
 
 @media (max-width: 992px) {
-  .contact .info-box {
-    padding: 1.5rem;
-  }
+  .contact .info-box { padding: 1.5rem; }
 }
 
 .contact .info-item {
@@ -1816,9 +1581,7 @@ section,
   margin-bottom: 2rem;
 }
 
-.contact .info-item:last-child {
-  margin-bottom: 0;
-}
+.contact .info-item:last-child { margin-bottom: 0; }
 
 .contact .info-item .icon-box {
   width: 3.5rem;
@@ -1853,9 +1616,7 @@ section,
   font-size: 0.95rem;
 }
 
-.contact .info-item .content p:last-child {
-  margin-bottom: 0;
-}
+.contact .info-item .content p:last-child { margin-bottom: 0; }
 
 .contact .contact-form {
   background-color: var(--surface-color);
@@ -1866,9 +1627,7 @@ section,
 }
 
 @media (max-width: 992px) {
-  .contact .contact-form {
-    padding: 1.5rem;
-  }
+  .contact .contact-form { padding: 1.5rem; }
 }
 
 .contact .contact-form h3 {
@@ -1877,9 +1636,7 @@ section,
 }
 
 @media (max-width: 768px) {
-  .contact .contact-form h3 {
-    font-size: 1.75rem;
-  }
+  .contact .contact-form h3 { font-size: 1.75rem; }
 }
 
 .contact .contact-form p {
@@ -1918,22 +1675,20 @@ section,
   transition: 0.3s;
 }
 
-.contact .contact-form .btn i {
-  font-size: 1.25rem;
-}
+.contact .contact-form .btn i { font-size: 1.25rem; }
 
 .contact .contact-form .btn:hover {
   background-color: color-mix(in srgb, var(--accent-color), var(--contrast-color) 20%);
 }
 
-/*--------------------------------------------------------------
-# Portfolio Details Section
---------------------------------------------------------------*/
+/* ==========================================================================
+   14. Portfolio Details Section
+   ========================================================================== */
 .portfolio-details .portfolio-details-slider {
   position: relative;
   overflow: hidden;
   border-radius: 8px;
-  box-shadow: 0 0 30px rgba(var(--default-color), 0.1);
+  box-shadow: 0 0 30px color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .portfolio-details .portfolio-details-slider .swiper-wrapper {
@@ -1969,7 +1724,7 @@ section,
   padding: 30px;
   background-color: var(--surface-color);
   border-radius: 8px;
-  box-shadow: 0 0 30px rgba(var(--default-color), 0.1);
+  box-shadow: 0 0 30px color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .portfolio-details .portfolio-info h3 {
@@ -2036,7 +1791,7 @@ section,
   border-radius: 8px;
   height: 100%;
   transition: 0.3s;
-  box-shadow: 0 0 30px rgba(var(--default-color), 0.1);
+  box-shadow: 0 0 30px color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .portfolio-details .portfolio-description .features .feature-item:hover,
@@ -2058,17 +1813,16 @@ section,
   margin-bottom: 15px;
 }
 
-.portfolio-details .portfolio-description .features .feature-item p,
-.portfolio-details .technology-stack .tech-categories .tech-category .tech-list .tech-item {
+.portfolio-details .portfolio-description .features .feature-item p {
   margin: 0;
   font-size: 15px;
 }
 
 /* Technology Stack Section */
 .portfolio-details .technology-stack {
-  margin-bottom: var(--section-spacing);
+  margin-bottom: 2rem;
   padding-top: 3rem;
-  border-top: var(--subtle-border);
+  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .portfolio-details .technology-stack .tech-categories {
@@ -2092,13 +1846,9 @@ section,
 }
 
 @media (max-width: 991px) {
-  .portfolio-details .portfolio-info {
-    margin-top: 20px;
-  }
+  .portfolio-details .portfolio-info { margin-top: 20px; }
 }
 
 @media (max-width: 768px) {
-  .portfolio-details .portfolio-description h2 {
-    font-size: 24px;
-  }
+  .portfolio-details .portfolio-description h2 { font-size: 24px; }
 }
