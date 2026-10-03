@@ -2,49 +2,96 @@
 
 /* Fonts */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Ubuntu",  sans-serif;
-  --nav-font: "Nunito",  sans-serif;
+  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Ubuntu", sans-serif;
+  --nav-font: "Nunito", sans-serif;
+  scroll-behavior: smooth;
 }
 
-/* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-:root { 
-  --background-color: #1f1f1f; /* Background color for the entire website, including individual sections */
-  --default-color: #ffffff; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #ffffff; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #ececec; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #232323; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #310606; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
-}
-
-/* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
+/* DEFAULT: LIGHT THEME */
 :root {
-  --nav-color: rgba(236, 236, 236, 0.59);  /* The default color of the main navmenu links */
-  --nav-hover-color: #ffffff; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #393939; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #393939; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #ffffff; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #ececec; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --background-color: #f8fafc;
+  --surface-color: #ffffff;
+  --heading-color: #0f172a;
+  --default-color: #334155;
+  --accent-color: #0d6efd;
+  --contrast-color: #ffffff;
+
+  /* Nav Menu Light Colors */
+  --nav-color: #475569;
+  --nav-hover-color: #0d6efd;
+  --nav-mobile-background-color: #ffffff;
+  --nav-dropdown-background-color: #ffffff;
+  --nav-dropdown-color: #334155;
+  --nav-dropdown-hover-color: #0d6efd;
 }
 
-/* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
+/* OVERRIDE: DARK THEME (Applied when data-theme="dark") */
+[data-theme="dark"] {
+  --background-color: #0f172a;
+  --surface-color: #1e293b;
+  --heading-color: #f8fafc;
+  --default-color: #cbd5e1;
+  --accent-color: #0d6efd;
+  --contrast-color: #ffffff;
 
+  /* Nav Menu Dark Colors */
+  --nav-color: rgba(236, 236, 236, 0.7);
+  --nav-hover-color: #ffffff;
+  --nav-mobile-background-color: #1e293b;
+  --nav-dropdown-background-color: #1e293b;
+  --nav-dropdown-color: #ffffff;
+  --nav-dropdown-hover-color: #0d6efd;
+}
+
+/* Section Presets */
 .light-background {
-  --background-color: #2c2c2c;
-  --surface-color: #323232;
+  --background-color: #f1f5f9;
+  --surface-color: #ffffff;
 }
 
 .dark-background {
-  --background-color: #040b14;
-  --default-color: #ffffff;
-  --heading-color: #ffffff;
-  --surface-color: #151f2b;
-  --contrast-color: #ffffff;
+  --background-color: #090d16;
+  --surface-color: #111827;
 }
 
-/* Smooth scroll */
-:root {
-  scroll-behavior: smooth;
+/* Fixed Top-Right Theme Toggle Button */
+.theme-toggle-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--surface-color);
+  color: var(--heading-color);
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 70%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.theme-toggle-btn i {
+  font-size: 1.2rem;
+}
+
+.theme-toggle-btn:hover {
+  transform: scale(1.1);
+  border-color: var(--accent-color);
+  box-shadow: 0 6px 20px color-mix(in srgb, var(--accent-color), transparent 70%);
+}
+
+@media (max-width: 768px) {
+  .theme-toggle-btn {
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1199,139 +1246,74 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Skills Section
+# Skills Icon Cards Styling
 --------------------------------------------------------------*/
-.skills .skills-grid .skill-card {
-  background: linear-gradient(135deg, var(--surface-color) 0%, color-mix(in srgb, var(--surface-color), var(--accent-color) 5%) 100%);
-  border-radius: 15px;
-  padding: 30px;
-  height: 100%;
-  position: relative;
-  overflow: hidden;
-  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 85%);
-  transition: all 0.3s ease;
-}
-
-.skills .skills-grid .skill-card:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  background: linear-gradient(90deg, var(--accent-color), color-mix(in srgb, var(--accent-color), var(--heading-color) 30%));
-}
-
-.skills .skills-grid .skill-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 20px 40px color-mix(in srgb, var(--accent-color), transparent 80%);
-  border-color: color-mix(in srgb, var(--accent-color), transparent 60%);
-}
-
-.skills .skills-grid .skill-card .skill-header {
+/* Category Title Styling */
+.skills .category-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--heading-color);
+  margin-bottom: 1.25rem;
+  text-align: left;
   display: flex;
   align-items: center;
-  margin-bottom: 25px;
-  gap: 15px;
+  border-bottom: 1px solid color-mix(in srgb, var(--accent-color), transparent 85%);
+  padding-bottom: 0.5rem;
 }
 
-.skills .skills-grid .skill-card .skill-header i {
-  font-size: 28px;
-  color: var(--accent-color);
-  width: 50px;
-  height: 50px;
+/* Skills Section Card Styling */
+.skills .skills-card {
+  background: linear-gradient(135deg, var(--surface-color) 0%, color-mix(in srgb, var(--surface-color), var(--accent-color) 5%) 100%);
+  border-radius: 1.5rem;
+  padding: 1.5rem 0.75rem;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 90%);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  height: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: color-mix(in srgb, var(--accent-color), transparent 90%);
-  border-radius: 12px;
 }
 
-.skills .skills-grid .skill-card .skill-header h3 {
-  font-size: 20px;
-  margin: 0;
-  color: var(--heading-color);
-}
-
-.skills .skills-grid .skill-card .skill-item {
-  margin-bottom: 20px;
-}
-
-.skills .skills-grid .skill-card .skill-item:last-child {
-  margin-bottom: 0;
-}
-
-.skills .skills-grid .skill-card .skill-item .skill-info {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 8px;
-}
-
-.skills .skills-grid .skill-card .skill-item .skill-info .skill-name {
-  font-weight: 600;
-  color: var(--heading-color);
-  font-size: 15px;
-}
-
-.skills .skills-grid .skill-card .skill-item .skill-info .skill-percentage {
-  font-size: 14px;
-  font-weight: 700;
-  color: var(--accent-color);
-}
-
-.skills .skills-grid .skill-card .skill-item .skill-bar {
-  height: 6px;
-  background: color-mix(in srgb, var(--default-color), transparent 92%);
-  border-radius: 10px;
-  overflow: hidden;
-  position: relative;
-}
-
-.skills .skills-grid .skill-card .skill-item .skill-bar .progress-bar {
-  height: 100%;
-  background: linear-gradient(45deg, var(--accent-color), color-mix(in srgb, var(--accent-color), var(--heading-color) 20%));
-  border-radius: 10px;
-  width: 0;
-  transition: width 1.8s cubic-bezier(0.4, 0, 0.2, 1);
-  position: relative;
-}
-
-.skills .skills-grid .skill-card .skill-item .skill-bar .progress-bar:after {
+.skills .skills-card::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-  animation: shimmer 2s infinite;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent-color), color-mix(in srgb, var(--accent-color), var(--heading-color) 30%));
 }
 
-@keyframes shimmer {
-  0% {
-    transform: translateX(-100%);
-  }
-
-  100% {
-    transform: translateX(100%);
-  }
+.skills .skills-card:hover {
+  transform: translateY(-5px);
+  border-color: color-mix(in srgb, var(--accent-color), transparent 50%);
+  box-shadow: 0 15px 35px color-mix(in srgb, var(--accent-color), transparent 85%);
 }
 
-@media (max-width: 767px) {
-  .skills .skills-grid .skill-card {
-    padding: 25px 20px;
-  }
+/* Image Icons Custom Size & Hover Behavior */
+.skills .skills-card .skill-icon-img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+  margin-bottom: 0.75rem;
+  transition: transform 0.3s ease;
+}
 
-  .skills .skills-grid .skill-card .skill-header {
-    flex-direction: column;
-    text-align: center;
-    gap: 10px;
-  }
+.skills .skills-card:hover .skill-icon-img {
+  transform: scale(1.15);
+}
 
-  .skills .skills-grid .skill-card .skill-header h3 {
-    font-size: 18px;
-  }
+.skills .skills-card p {
+  color: var(--heading-color);
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: 0.2px;
 }
 
 /*--------------------------------------------------------------

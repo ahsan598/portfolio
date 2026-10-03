@@ -4,16 +4,20 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>SnapFolio</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  
+  <!-- Updated SEO Title & Description -->
+  <title>Mohammed Ahsan | Senior Cloud Engineer</title>
+  <meta name="description" content="Portfolio of Mohammed Ahsan - Senior Cloud & DevOps Engineer specializing in AWS, Terraform, Kubernetes, CI/CD, and IaC Automation.">
+  <meta name="keywords" content="DevOps Engineer, Cloud Engineer, AWS, Terraform, Kubernetes, Docker, CI/CD, Infrastructure as Code">
+  <meta name="author" content="Mohammed Ahsan">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Devicon & FontAwesome Icons for DevOps Stack -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -34,28 +38,33 @@
 
 <body class="index-page">
 
-  <header id="header" class="header dark-background d-flex flex-column justify-content-center">
-    <i class="header-toggle d-xl-none bi bi-list"></i>
+  <!-- Fixed Top-Right Theme Toggle Button -->
+  <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+    <i class="bi bi-moon-stars-fill" id="theme-icon"></i>
+  </button>
 
-    <div class="header-container d-flex flex-column align-items-start">
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
-          <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
-          <li><a href="#skills"><i class="bi bi-code-slash navicon"></i> Skills</a></li>
-          <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-          <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Projects</a></li>
-          <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
-        </ul>
-      </nav>
+  <header id="header" class="header d-flex flex-column justify-content-center">
+  <i class="header-toggle d-xl-none bi bi-list"></i>
 
-      <!-- Social Links -->
+  <div class="header-container d-flex flex-column align-items-start">
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="#skills"><i class="bi bi-code-slash navicon"></i> Skills</a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Projects</a></li>
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      </ul>
+    </nav>
+
+      <!-- Social Links
       <div class="social-links text-center">
         <a href="https://www.linkedin.com/in/ahsan12/" class="twitter"><i class="bi bi-linkedin"></i></a>
         <a href="https://github.com/ahsan598" class="facebook"><i class="bi bi-github"></i></a>
         <a href="https://dev.to/ahsan598" class="instagram"><i class="bi bi-medium"></i></a>
         <a href="https://discord.com/" target="_blank" class="discord"><i class="bi bi-discord"></i></a>
-      </div>
+      </div> -->
 
     </div>
   </header>
@@ -209,239 +218,206 @@
 
     <!-- Skills Section -->
     <section id="skills" class="skills section">
-
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Skills</h2>
-        <p>Technical stack and cloud technologies I leverage to build, automate, and scale platforms.</p>
-      </div><!-- End Section Title -->
+        <h2>Skills &amp; Technologies</h2>
+        <p>Tools and technologies I use to design, automate, and scale resilient cloud infrastructure.</p>
+      </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="skills-grid">
-              <div class="row g-4">
+        <!-- Category 1: Cloud & Infrastructure -->
+        <div class="skills-category mb-5">
+          <h3 class="category-title"><i class="fa-solid fa-cloud me-2 text-info"></i> Cloud &amp; Infrastructure</h3>
+          <div class="row g-3 text-center">
 
-                <!-- 1. Cloud, Containers & Infrastructure Card -->
-                <div class="col-md-6" data-aos="flip-left" data-aos-delay="200">
-                  <div class="skill-card">
-                    <div class="skill-header">
-                      <i class="bi bi-cloud"></i>
-                      <h3>Cloud & Infrastructure</h3>
-                    </div>
-                    <div class="skills-animation">
-
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">AWS Cloud Platform</span>
-                          <span class="skill-percentage">90%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">Docker & Kubernetes</span>
-                          <span class="skill-percentage">85%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">Terraform (IaC)</span>
-                          <span class="skill-percentage">85%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">Helm & OpenShift</span>
-                          <span class="skill-percentage">80%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                    </div>
-                  </div><!-- End Card 1 -->
-                </div>
-
-                <!-- 2. CI/CD, Build & GitOps Card -->
-                <div class="col-md-6" data-aos="flip-left" data-aos-delay="300">
-                  <div class="skill-card">
-                    <div class="skill-header">
-                      <i class="bi bi-diagram-3"></i>
-                      <h3>CI/CD & GitOps</h3>
-                    </div>
-                    <div class="skills-animation">
-
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">GitHub Actions & GitLab CI</span>
-                          <span class="skill-percentage">85%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">Argo CD (GitOps)</span>
-                          <span class="skill-percentage">80%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">Jenkins</span>
-                          <span class="skill-percentage">75%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">Maven & JFrog Artifactory</span>
-                          <span class="skill-percentage">80%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                    </div>
-                  </div><!-- End Card 2 -->
-                </div>
-
-                <!-- 3. Programming, Security & Automation Card -->
-                <div class="col-md-6" data-aos="flip-left" data-aos-delay="400">
-                  <div class="skill-card">
-                    <div class="skill-header">
-                      <i class="bi bi-code-slash"></i>
-                      <h3>Automation, Code & Security</h3>
-                    </div>
-                    <div class="skills-animation">
-
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">Python & Go</span>
-                          <span class="skill-percentage">80%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">Linux & Bash Scripting</span>
-                          <span class="skill-percentage">85%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">Ansible</span>
-                          <span class="skill-percentage">80%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">HashiCorp Vault & SonarQube</span>
-                          <span class="skill-percentage">75%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                    </div>
-                  </div><!-- End Card 3 -->
-                </div>
-
-                <!-- 4. Observability & Service Mesh Card -->
-                <div class="col-md-6" data-aos="flip-left" data-aos-delay="500">
-                  <div class="skill-card">
-                    <div class="skill-header">
-                      <i class="bi bi-graph-up"></i>
-                      <h3>Observability & Networking</h3>
-                    </div>
-                    <div class="skills-animation">
-
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">Prometheus & Grafana</span>
-                          <span class="skill-percentage">85%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">Datadog & OpenTelemetry</span>
-                          <span class="skill-percentage">75%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">Fluent Bit & Loki / EFK</span>
-                          <span class="skill-percentage">80%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">Nginx & Istio Service Mesh</span>
-                          <span class="skill-percentage">80%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                    </div>
-                  </div><!-- End Card 4 -->
-                </div>
-
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="skills-card">
+                <img src="https://skillicons.dev/icons?i=aws" height="40" alt="AWS logo" class="skill-icon-img" />
+                <p>AWS</p>
               </div>
-            </div><!-- End Skills Grid -->
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="skills-card">
+                <img src="https://skillicons.dev/icons?i=azure" height="40" alt="Azure logo" class="skill-icon-img" />
+                <p>Azure</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="skills-card">
+                <img src="https://cdn.simpleicons.org/docker/2496ED" height="40" alt="Docker logo" class="skill-icon-img" />
+                <p>Docker</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="skills-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" height="40" alt="Kubernetes logo" class="skill-icon-img" />
+                <p>Kubernetes</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="skills-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" height="40" alt="Linux logo" class="skill-icon-img" />
+                <p>Linux</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="skills-card">
+                <img src="https://cdn.simpleicons.org/nginx/009639" height="40" alt="Nginx logo" class="skill-icon-img" />
+                <p>Nginx</p>
+              </div>
+            </div>
 
           </div>
         </div>
-      </div>
 
+        <!-- Category 2: CI/CD, Automation & Provisioning -->
+        <div class="skills-category mb-5">
+          <h3 class="category-title"><i class="fa-solid fa-gears me-2 text-warning"></i> CI/CD, Automation &amp; Provisioning</h3>
+          <div class="row g-3 text-center">
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="skills-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" height="40" alt="Terraform logo" class="skill-icon-img" />
+                <p>Terraform</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="skills-card">
+                <img src="https://cdn.simpleicons.org/ansible/EE0000" height="40" alt="Ansible logo" class="skill-icon-img" />
+                <p>Ansible</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="skills-card">
+                <img src="https://skillicons.dev/icons?i=githubactions" height="40" alt="GitHub Actions logo" class="skill-icon-img" />
+                <p>GitHub Actions</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="skills-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" height="40" alt="GitLab logo" class="skill-icon-img" />
+                <p>GitLab CI</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="skills-card">
+                <img src="https://www.vectorlogo.zone/logos/jenkins/jenkins-icon.svg" height="40" alt="Jenkins logo" class="skill-icon-img" />
+                <p>Jenkins</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="skills-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/argocd/argocd-original.svg" height="40" alt="ArgoCD logo" class="skill-icon-img" />
+                <p>ArgoCD</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="skills-card">
+                <img src="https://skillicons.dev/icons?i=maven" height="40" alt="Maven logo" class="skill-icon-img" />
+                <p>Maven</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="skills-card">
+                <img src="https://www.vectorlogo.zone/logos/jfrog/jfrog-icon.svg" height="40" alt="JFrog logo" class="skill-icon-img" />
+                <p>JFrog</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="skills-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="40" alt="Python logo" class="skill-icon-img" />
+                <p>Python</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="skills-card">
+                <img src="https://cdn.simpleicons.org/go/00ADD8" height="40" alt="Go logo" class="skill-icon-img" />
+                <p>Go</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="skills-card">
+                <img src="https://skillicons.dev/icons?i=bash" alt="Bash" class="skill-icon-img" />
+                <p>Bash</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Category 3: Observability & Security -->
+        <div class="skills-category">
+          <h3 class="category-title"><i class="fa-solid fa-shield-halved me-2 text-success"></i> Observability &amp; Security</h3>
+          <div class="row g-3 text-center">
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="skills-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vault/vault-original.svg" height="40" alt="Vault logo" class="skill-icon-img" />
+                <p>HashiCorp Vault</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="skills-card">
+                <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/sonarqube.png" height="40" alt="SonarQube logo" class="skill-icon-img" />
+                <p>SonarQube</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="skills-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prometheus/prometheus-original.svg" height="40" alt="Prometheus logo" class="skill-icon-img" />
+                <p>Prometheus</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="skills-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg" height="40" alt="Grafana logo" class="skill-icon-img" />
+                <p>Grafana</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="skills-card">
+                <img src="https://www.vectorlogo.zone/logos/datadoghq/datadoghq-icon.svg" height="40" alt="Datadog logo" class="skill-icon-img" />
+                <p>Datadog</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="skills-card">
+                <img src="https://www.vectorlogo.zone/logos/fluentd/fluentd-icon.svg" height="40" alt="FluentBit logo" class="skill-icon-img" />
+                <p>FluentBit</p>
+              </div>
+            </div>
+
+            <!-- <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="skills-card">
+                <img src="https://www.vectorlogo.zone/logos/istioio/istioio-icon.svg" height="40" alt="Istio logo" class="skill-icon-img" />
+                <p>Istio</p>
+              </div>
+            </div> -->
+
+          </div>
+        </div>
+
+      </div>
     </section>
     <!-- /Skills Section -->
 
@@ -756,37 +732,63 @@
           <div class="col-lg-5">
             <div class="info-box">
               <h3>Contact Info</h3>
-              <p>Reach out anytime via email or phone — I’m always happy to chat!</p>
+              <p>Reach out anytime via email or social platforms — I’m always happy to chat!</p>
 
-              <div class="info-item">
-                <div class="icon-box">
-                  <i class="bi bi-geo-alt"></i>
-                </div>
-                <div class="content">
-                  <h4>Location</h4>
-                  <p>Hyderabad, Telangana, IN</p>
-                </div>
-              </div>
-
-              <div class="info-item">
-                <div class="icon-box">
-                  <i class="bi bi-telephone"></i>
-                </div>
-                <div class="content">
-                  <h4>Phone Number</h4>
-                  <p>+91 837 4315 451</p>
-                </div>
-              </div>
-
+              <!-- Email Item -->
               <div class="info-item">
                 <div class="icon-box">
                   <i class="bi bi-envelope"></i>
                 </div>
                 <div class="content">
                   <h4>Email Address</h4>
-                  <p>mdahsan060@gmail.com</p>
+                  <p><a href="mailto:mdahsan060@gmail.com" style="color: inherit; text-decoration: none;">mdahsan060@gmail.com</a></p>
                 </div>
               </div>
+
+              <!-- LinkedIn Item -->
+              <div class="info-item">
+                <div class="icon-box">
+                  <i class="bi bi-linkedin"></i>
+                </div>
+                <div class="content">
+                  <h4>LinkedIn</h4>
+                  <p><a href="https://www.linkedin.com/in/ahsan12/" target="_blank" style="color: inherit; text-decoration: none;">linkedin.com/in/ahsan12</a></p>
+                </div>
+              </div>
+
+              <!-- GitHub Item -->
+              <div class="info-item">
+                <div class="icon-box">
+                  <i class="bi bi-github"></i>
+                </div>
+                <div class="content">
+                  <h4>GitHub</h4>
+                  <p><a href="https://github.com/ahsan598" target="_blank" style="color: inherit; text-decoration: none;">github.com/ahsan598</a></p>
+                </div>
+              </div>
+
+              <!-- DEV.to / Blog Item -->
+              <div class="info-item">
+                <div class="icon-box">
+                  <i class="bi bi-journal-text"></i>
+                </div>
+                <div class="content">
+                  <h4>Dev.to</h4>
+                  <p><a href="https://dev.to/ahsan598" target="_blank" style="color: inherit; text-decoration: none;">dev.to/ahsan598</a></p>
+                </div>
+              </div>
+
+              <!-- Discord Item -->
+              <div class="info-item">
+                <div class="icon-box">
+                  <i class="bi bi-discord"></i>
+                </div>
+                <div class="content">
+                  <h4>Discord</h4>
+                  <p><a href="https://discord.com/" target="_blank" style="color: inherit; text-decoration: none;">Connect on Discord</a></p>
+                </div>
+              </div>
+
             </div>
           </div>
 
@@ -837,6 +839,17 @@
     </section><!-- /Contact Section -->
 
   </main>
+
+  <footer id="footer" class="footer position-relative">
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© 2026 <strong>Ahsan's Portfolio</strong>. All Rights Reserved.</p>
+      </div>
+      <div class="credits">
+        <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+      </div>
+    </div>
+  </footer>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>

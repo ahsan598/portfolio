@@ -13,6 +13,34 @@
   }
   headerToggleBtn.addEventListener('click', headerToggle);
 
+  // Theme Toggle Logic
+  const themeToggleBtn = document.getElementById('theme-toggle');
+  const themeIcon = document.getElementById('theme-icon');
+
+  // Default is 'light'
+  const savedTheme = localStorage.getItem('selected-theme') || 'light';
+
+  // Apply saved or default theme on load
+  document.documentElement.setAttribute('data-theme', savedTheme);
+  updateIcon(savedTheme);
+
+  themeToggleBtn.addEventListener('click', () => {
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    
+    document.documentElement.setAttribute('data-theme', newTheme);
+    localStorage.setItem('selected-theme', newTheme);
+    updateIcon(newTheme);
+  });
+
+  function updateIcon(theme) {
+    if (theme === 'dark') {
+      themeIcon.className = 'bi bi-sun-fill'; // Show sun icon when in dark mode
+    } else {
+      themeIcon.className = 'bi bi-moon-stars-fill'; // Show moon icon when in light mode
+    }
+  }
+
   /**
    * Hide mobile nav on same-page/hash links
    */
