@@ -16,10 +16,10 @@
   --surface-color: #ffffff;
   --heading-color: #0f172a;
   --default-color: #334155;
+  --muted-text-color: #64748b;
   --accent-color: #0d6efd;
   --contrast-color: #ffffff;
 
-  /* Nav Menu Light Colors */
   --nav-color: #475569;
   --nav-hover-color: #0d6efd;
   --nav-mobile-background-color: #ffffff;
@@ -34,10 +34,10 @@
   --surface-color: #1e293b;
   --heading-color: #f8fafc;
   --default-color: #cbd5e1;
+  --muted-text-color: #94a3b8;
   --accent-color: #0d6efd;
   --contrast-color: #ffffff;
 
-  /* Nav Menu Dark Colors */
   --nav-color: rgba(236, 236, 236, 0.7);
   --nav-hover-color: #ffffff;
   --nav-mobile-background-color: #1e293b;
@@ -46,7 +46,10 @@
   --nav-dropdown-hover-color: #0d6efd;
 }
 
-/* Section Presets */
+.text-theme-muted {
+  color: var(--muted-text-color) !important;
+}
+
 .light-background {
   --background-color: #f1f5f9;
   --surface-color: #ffffff;
@@ -121,7 +124,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
 }
 
-/* PHP Email Form Messages */
 .php-email-form .error-message {
   display: none;
   background: #df1529;
@@ -1129,53 +1131,80 @@ section, .section {
 }
 
 /* ==========================================================================
-   Resume Section Styling
+   11. Resume Section
    ========================================================================== */
-.resume .resume-title {
-  font-size: 1.35rem;
+.resume .resume-category-title {
+  font-size: 1.25rem;
   font-weight: 700;
   color: var(--heading-color);
-  padding-bottom: 8px;
-  border-bottom: 2px solid var(--accent-color, #0d6efd);
-  display: inline-block;
+  margin-bottom: 1.25rem;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid color-mix(in srgb, var(--accent-color), transparent 85%);
+  padding-bottom: 0.5rem;
 }
 
-.resume .resume-item {
+.resume .resume-card {
+  background: linear-gradient(135deg, var(--surface-color) 0%, color-mix(in srgb, var(--surface-color), var(--accent-color) 5%) 100%);
+  border-radius: 1.5rem;
+  padding: 1.75rem 1.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 90%);
   position: relative;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  height: auto;
 }
 
-/* Timeline Left Indicator Dot */
-.resume .resume-badge {
-  top: 4px;
-  left: -7px;
-  width: 12px;
-  height: 12px;
-  border: 2px solid var(--surface-color, #ffffff);
+.resume .resume-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent-color), color-mix(in srgb, var(--accent-color), var(--heading-color) 30%));
 }
 
-/* Removing continuous line from last item */
-.resume .resume-item:last-child {
-  border-start-color: transparent !important;
+.resume .resume-card:hover {
+  transform: translateY(-4px);
+  border-color: color-mix(in srgb, var(--accent-color), transparent 50%);
+  box-shadow: 0 15px 35px color-mix(in srgb, var(--accent-color), transparent 85%);
 }
 
-.resume .resume-item ul {
-  margin-bottom: 0;
+.resume .resume-card h4 {
+  color: var(--heading-color);
+  font-size: 1.1rem;
 }
 
-.resume .resume-item ul li {
+.resume .resume-card .company-name {
+  color: var(--accent-color);
+  font-size: 0.95rem;
+}
+
+.resume .resume-card .location-text {
+  font-size: 0.85rem;
+}
+
+.resume .resume-details li {
   padding-bottom: 6px;
-  line-height: 1.5;
+  line-height: 1.6;
+  font-size: 0.95rem;
 }
 
-.resume .resume-item ul li:last-child {
+.resume .resume-details li:last-child {
   padding-bottom: 0;
 }
 
 /* ==========================================================================
-   Project Cards & Tool Badges Styling Updates
+   12. Projects Section
    ========================================================================== */
+.project-card {
+  background-color: var(--surface-color) !important;
+  border-color: color-mix(in srgb, var(--default-color), transparent 85%) !important;
+}
 
-/* Redirect Arrow Badge on Top Right of Project Image */
 .project-image {
   position: relative;
 }
@@ -1206,13 +1235,11 @@ section, .section {
   box-shadow: 0 6px 16px rgba(13, 110, 253, 0.4);
 }
 
-/* Image Hover Zoom */
 .project-card:hover .project-image img {
   transform: scale(1.05);
   transition: transform 0.4s ease;
 }
 
-/* Enhanced Tech Tag Badges */
 .badge-tech {
   font-size: 0.78rem;
   font-weight: 600;
