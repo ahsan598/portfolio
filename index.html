@@ -4,15 +4,19 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>SnapFolio</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  
+  <!-- SEO Title & Description -->
+  <title>Mohammed Ahsan | Senior Cloud Engineer</title>
+  <meta name="description" content="Portfolio of Mohammed Ahsan - Senior Cloud & DevOps Engineer specializing in AWS, Terraform, Kubernetes, CI/CD, and IaC Automation.">
+  <meta name="keywords" content="DevOps Engineer, Cloud Engineer, AWS, Terraform, Kubernetes, Docker, CI/CD, Infrastructure as Code">
+  <meta name="author" content="Mohammed Ahsan">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Font Awesome Icons -->
+  <!-- Devicon & FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   <!-- Fonts -->
@@ -29,12 +33,16 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
 </head>
 
 <body class="index-page">
 
-  <header id="header" class="header dark-background d-flex flex-column justify-content-center">
+  <!-- Theme Toggle Button -->
+  <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+    <i class="bi bi-moon-stars-fill" id="theme-icon"></i>
+  </button>
+
+  <header id="header" class="header d-flex flex-column justify-content-center">
     <i class="header-toggle d-xl-none bi bi-list"></i>
 
     <div class="header-container d-flex flex-column align-items-start">
@@ -44,20 +52,17 @@
           <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
           <li><a href="#skills"><i class="bi bi-code-slash navicon"></i> Skills</a></li>
           <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-          <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+          <li><a href="#projects"><i class="bi bi-images navicon"></i> Projects</a></li>
           <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
         </ul>
       </nav>
-
+      <!-- Social Links
       <div class="social-links text-center">
-        <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <!-- <a href="https://github.com/ahsan598" target="_blank" class="github"><i class="bi bi-github"></i></a> -->
-        <a href="https://www.linkedin.com/in/ahsan12/" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
-        <!-- <a href="https://wa.me/918374315451" target="_blank" class="whatsapp"><i class="bi bi-whatsapp"></i></a> -->
-      </div>
-
+        <a href="https://www.linkedin.com/in/ahsan12/" class="twitter"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/ahsan598" class="facebook"><i class="bi bi-github"></i></a>
+        <a href="https://dev.to/ahsan598" class="instagram"><i class="bi bi-medium"></i></a>
+        <a href="https://discord.com/" target="_blank" class="discord"><i class="bi bi-discord"></i></a>
+      </div> -->
     </div>
   </header>
 
@@ -65,45 +70,25 @@
 
     <!-- Hero Section -->
     <section id="hero" class="hero section">
-
       <div class="background-elements">
         <div class="bg-circle circle-1"></div>
         <div class="bg-circle circle-2"></div>
       </div>
 
       <div class="hero-content">
-
         <div class="container">
           <div class="row align-items-center">
 
             <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
               <div class="hero-text">
-                <!-- <h1>Snap<span class="accent-text">Folio</span></h1> -->
                 <h1>Mohammed Ahsan</h1>
-                <p class="lead"><span class="typed" data-typed-items="Sr. DevOps Engineer, Platform Engineer, Cloud-Native Engineer"></span></p>
-                <p class="description">Passionate about building scalable platforms, enabling secure DevOps practices, and driving cloud-native adoption to empower developers and protect businesses.</p>
+                <p class="lead"><span class="typed" data-typed-items="Building Automated Pipelines..., Delivering Seamless Deployments..., Optimizing Cloud Architecture..."></span></p>
+                <p class="description">Senior Cloud Engineer specializing in scalable platform engineering, robust DevOps, and cloud-native architectures. Dedicated to empowering engineering teams through end-to-end automation, proactive security, and high-availability infrastructure.</p>
 
                 <div class="hero-actions">
-                  <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                  <a href="#projects" class="btn btn-primary">View My Work</a>
                   <a href="#contact" class="btn btn-outline">Get In Touch</a>
                 </div>
-
-                <!-- Social Links -->
-                <div class="social-links" data-aos="fade-up" data-aos-delay="400">
-                  <a href="mailto:mdahsan060@gmail.com" target="_blank" aria-label="Email">
-                    <i class="fa-solid fa-envelope"></i> 
-                  </a>
-                  <a href="https://www.linkedin.com/in/ahsan12/" target="_blank" aria-label="Linkedin">
-                    <i class="fa-brands fa-linkedin"></i>
-                  </a>
-                  <a href="https://github.com/ahsan598" target="_blank" aria-label="GitHub">
-                    <i class="fa-brands fa-github"></i>
-                  </a>
-                  <a href="https://dev.to/ahsan598" target="_blank" aria-label="Dev">
-                    <i class="fa-brands fa-dev"></i>
-                  </a>
-                </div>
-
               </div>
             </div>
 
@@ -126,7 +111,7 @@
                     </div>
                   </div>
                   <div class="profile-background"></div>
-                  <img src="assets/img/profile/profile-pic-1.jpg" alt="Alexander Chen" class="profile-image">
+                  <img src="/assets/images/profile/profile-pic.png" alt="Mohammed Ahsan" class="profile-image">
                 </div>
               </div>
             </div>
@@ -134,14 +119,11 @@
           </div>
         </div>
       </div>
-
     </section>
     <!-- /Hero Section -->
 
-
     <!-- About Section -->
     <section id="about" class="about section">
-
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row">
@@ -149,7 +131,7 @@
             <div class="profile-card">
               <div class="profile-header">
                 <div class="profile-image">
-                  <img src="assets/img/profile/profile-pic-1.jpg" alt="Profile Image" class="img-fluid">
+                  <img src="/assets/images/profile/profile-pic.png" alt="Mohammed Ahsan" class="img-fluid">
                 </div>
                 <div class="profile-badge">
                   <i class="bi bi-check-circle-fill"></i>
@@ -158,21 +140,14 @@
 
               <div class="profile-content">
                 <h3>Mohammed Ahsan</h3>
-                <p class="profession">Sr. DevOps Engineer</p>
+                <p class="profession">Senior Cloud Engineer</p>
 
                 <div class="contact-links">
-                  <a href="mailto:mdahsan060@gmail.com" class="contact-item">
-                    <i class="bi bi-envelope"></i>
-                    mdahsan060@gmail.com
-                  </a>
-                  <a href="tel:+918374315451" class="contact-item">
-                    <i class="bi bi-telephone"></i>
-                    +91 837-4315-451
-                  </a>
-                  <a href="#" class="contact-item">
-                    <i class="bi bi-geo-alt"></i>
-                    Hyderabad, IN
-                  </a>
+                  <div class="contact-item"><i class="bi bi-clock-history"></i>Available for Senior & Lead Roles</div>
+                  <div class="contact-item"><i class="bi bi-briefcase"></i>Full-Time / Hybrid / Remote</div>
+                  <div class="contact-item"><i class="bi bi-globe"></i>IST (UTC +5:30) | Remote Friendly</div>
+                  <div class="contact-item"><i class="bi bi-mortarboard"></i>B.Tech in Computer Science</div>
+                  <div class="contact-item"><i class="bi bi-translate"></i>English, Hindi, Urdu</div>
                 </div>
               </div>
             </div>
@@ -182,61 +157,41 @@
             <div class="about-content">
               <div class="section-header">
                 <span class="badge-text">Get to Know Me</span>
-                <h2>Focused on Building Secure, Automated Cloud Solutions</h2>
+                <h2>Scalable & Reliable Infrastructure</h2>
               </div>
 
               <div class="description">
-                <p>Senior DevOps Engineer building secure, automated cloud platforms that help teams innovate faster without compromising safety. I specialize in cloud-native infrastructure, CI/CD automation, and container security — turning complex operations into reliable, scalable solutions.</p>
-
-                <p>Hands-on experience with cloud platforms, pipelines, infrastructure automation, and monitoring tools. I combine automation with security practices to deliver resilient systems that empower teams to move faster with confidence.</p>
+                <p>I design and manage cloud infrastructure engineered for speed, resilience, and security. By translating complex system requirements into modular, scalable platforms, I eliminate operational bottlenecks and modernize the overall engineering environment.</p>
+                <p>Beyond core infrastructure, I build dependable engineering foundations that teams can trust. By embedding security and automation directly into delivery pipelines, I reduce operational friction, optimize system uptime, and give developers the confidence to ship faster.</p>
               </div>
-
-              <!-- <div class="stats-grid">
-                <div class="stat-item">
-                  <div class="stat-number">10+</div>
-                  <div class="stat-label">Projects Completed</div>
-                </div>
-                <div class="stat-item">
-                  <div class="stat-number">4+</div>
-                  <div class="stat-label">Years of Experience</div>
-                </div>
-                <div class="stat-item">
-                  <div class="stat-number">5+</div>
-                  <div class="stat-label">Secure Deployments</div>
-                </div>
-              </div> -->
 
               <div class="details-grid">
                 <div class="detail-row">
                   <div class="detail-item">
                     <span class="detail-label">Specialization</span>
-                    <span class="detail-value">Cloud-Native Infrastructure</span>
+                    <span class="detail-value">Cloud Platform & DevOps</span>
                   </div>
                   <div class="detail-item">
                     <span class="detail-label">Experience Level</span>
                     <span class="detail-value">Senior Professional</span>
                   </div>
-                </div>
-                <div class="detail-row">
                   <div class="detail-item">
-                    <span class="detail-label">Education</span>
-                    <span class="detail-value">Computer Science, JNTUH</span>
+                    <span class="detail-label">Engineering Philosophy</span>
+                    <span class="detail-value">Security-First & Zero-Downtime</span>
                   </div>
                   <div class="detail-item">
-                    <span class="detail-label">Languages</span>
-                    <span class="detail-value">English, Hindi, Urdu</span>
+                    <span class="detail-label">Key Impact</span>
+                    <span class="detail-value">High Availability & Automation</span>
                   </div>
                 </div>
               </div>
 
               <div class="cta-section">
-                <a href="assets/files/Mohammed_Ahsan_Resume.pdf" class="btn btn-primary">
-                  <i class="bi bi-download"></i>
-                  Download Resume
+                <a href="assets/files/Mohammed_Ahsan_Resume.pdf" class="btn btn-primary" download>
+                  <i class="bi bi-download"></i> Download Resume
                 </a>
                 <a href="#contact" class="btn btn-outline">
-                  <i class="bi bi-chat-dots"></i>
-                  Let's Talk
+                  <i class="bi bi-chat-dots"></i> Let's Talk
                 </a>
               </div>
             </div>
@@ -244,657 +199,440 @@
         </div>
 
       </div>
-
     </section>
     <!-- /About Section -->
 
-
     <!-- Skills Section -->
     <section id="skills" class="skills section">
-
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Skills</h2>
-        <p>Exploring and mastering cloud-native technologies, automation, and secure infrastructure.</p>
-      </div><!-- End Section Title -->
+        <h2>Skills &amp; Technologies</h2>
+        <p>Tools and technologies I use to design, automate, and scale resilient cloud infrastructure.</p>
+      </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="skills-grid">
-              <div class="row g-4">
-
-                <div class="col-md-6" data-aos="flip-left" data-aos-delay="200">
-                  <div class="skill-card">
-                    <div class="skill-header">
-                      <i class="bi bi-cloud"></i>
-                      <h3>Cloud & Infrastructure</h3>
-                    </div>
-                    <div class="skills-animation">
-
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">AWS</span>
-                          <span class="skill-percentage">80%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">Kubernetes</span>
-                          <span class="skill-percentage">50%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">Docker</span>
-                          <span class="skill-percentage">65%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">Terraform</span>
-                          <span class="skill-percentage">60%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">Linux</span>
-                          <span class="skill-percentage">70%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                    </div>
-                  </div><!-- End Cloud Card -->
-                </div>
-
-                <div class="col-md-6" data-aos="flip-left" data-aos-delay="300">
-                  <div class="skill-card">
-                    <div class="skill-header">
-                      <i class="bi bi-diagram-3"></i>
-                      <h3>CI/CD & Configuration</h3>
-                    </div>
-                    <div class="skills-animation">
-
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">GitLab CI</span>
-                          <span class="skill-percentage">60%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">Jenkins</span>
-                          <span class="skill-percentage">65%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">Argo CD</span>
-                          <span class="skill-percentage">50%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">Ansible</span>
-                          <span class="skill-percentage">65%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">Helm</span>
-                          <span class="skill-percentage">45%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                    </div>
-                  </div><!-- End CI/CD Card -->
-                </div>
-
-                <div class="col-md-6" data-aos="flip-left" data-aos-delay="400">
-                  <div class="skill-card">
-                    <div class="skill-header">
-                      <i class="bi bi-shield-lock"></i>
-                      <h3>Security & Automation</h3>
-                    </div>
-                    <div class="skills-animation">
-
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">RBAC & IAM</span>
-                          <span class="skill-percentage">70%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">Vault</span>
-                          <span class="skill-percentage">60%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">Python</span>
-                          <span class="skill-percentage">50%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">Bash</span>
-                          <span class="skill-percentage">60%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">Git</span>
-                          <span class="skill-percentage">90%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                    </div>
-                  </div><!-- End Security Card -->
-                </div>
-
-                <div class="col-md-6" data-aos="flip-left" data-aos-delay="500">
-                  <div class="skill-card">
-                    <div class="skill-header">
-                      <i class="bi bi-graph-up"></i>
-                      <h3>Monitoring & Observability</h3>
-                    </div>
-                    <div class="skills-animation">
-                      
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">Grafana</span>
-                          <span class="skill-percentage">50%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">Prometheus</span>
-                          <span class="skill-percentage">45%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">Dynatrace</span>
-                          <span class="skill-percentage">50%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">Datadog</span>
-                          <span class="skill-percentage">45%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">Nginx</span>
-                          <span class="skill-percentage">60%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div><!-- End Monitoring Card -->
-
-                </div>
+        <!-- Category 1: Cloud & Infrastructure -->
+        <div class="skills-category mb-5">
+          <h3 class="category-title"><i class="fa-solid fa-cloud me-2 text-info"></i> Cloud &amp; Infrastructure</h3>
+          <div class="row g-3 text-center">
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="skills-card">
+                <img src="https://skillicons.dev/icons?i=aws" height="40" alt="AWS logo" class="skill-icon-img" />
+                <p>AWS</p>
               </div>
-            </div><!-- End Skills Grid -->
-
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="skills-card">
+                <img src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg" height="40" alt="Azure logo" class="skill-icon-img" />
+                <p>Azure</p>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="skills-card">
+                <img src="https://cdn.simpleicons.org/docker/2496ED" height="40" alt="Docker logo" class="skill-icon-img" />
+                <p>Docker</p>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="skills-card">
+                <img src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg" height="40" alt="Kubernetes logo" class="skill-icon-img" />
+                <p>Kubernetes</p>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="skills-card">
+                <img src="https://www.vectorlogo.zone/logos/terraformio/terraformio-icon.svg" height="40" alt="Terraform logo" class="skill-icon-img" />
+                <p>Terraform</p>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
 
+        <!-- Category 2: CI/CD, Automation & Provisioning -->
+        <div class="skills-category mb-5">
+          <h3 class="category-title"><i class="fa-solid fa-gears me-2 text-warning"></i> CI/CD, Automation &amp; Provisioning</h3>
+          <div class="row g-3 text-center">
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="skills-card">
+                <img src="https://www.vectorlogo.zone/logos/linux/linux-icon.svg" height="40" alt="Linux logo" class="skill-icon-img" />
+                <p>Linux</p>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="skills-card">
+                <img src="https://cdn.simpleicons.org/ansible/EE0000" height="40" alt="Ansible logo" class="skill-icon-img" />
+                <p>Ansible</p>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="skills-card">
+                <img src="https://skillicons.dev/icons?i=githubactions" height="40" alt="GitHub Actions logo" class="skill-icon-img" />
+                <p>GitHub Actions</p>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="skills-card">
+                <img src="https://www.vectorlogo.zone/logos/gitlab/gitlab-icon.svg" height="40" alt="GitLab logo" class="skill-icon-img" />
+                <p>GitLab CI</p>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="skills-card">
+                <img src="https://www.vectorlogo.zone/logos/jenkins/jenkins-icon.svg" height="40" alt="Jenkins logo" class="skill-icon-img" />
+                <p>Jenkins</p>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="skills-card">
+                <img src="https://www.vectorlogo.zone/logos/argoprojio/argoprojio-icon.svg" height="40" alt="ArgoCD logo" class="skill-icon-img" />
+                <p>ArgoCD</p>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="skills-card">
+                <img src="https://www.vectorlogo.zone/logos/nginx/nginx-icon.svg" height="40" alt="Nginx logo" class="skill-icon-img" />
+                <p>Nginx</p>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="skills-card">
+                <img src="https://www.vectorlogo.zone/logos/jfrog/jfrog-icon.svg" height="40" alt="JFrog logo" class="skill-icon-img" />
+                <p>JFrog</p>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="skills-card">
+                <img src="https://www.vectorlogo.zone/logos/python/python-icon.svg" height="40" alt="Python logo" class="skill-icon-img" />
+                <p>Python</p>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="skills-card">
+                <img src="https://www.vectorlogo.zone/logos/golang/golang-icon.svg" height="40" alt="Go logo" class="skill-icon-img" />
+                <p>Go</p>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="skills-card">
+                <img src="https://skillicons.dev/icons?i=bash" height="40" alt="Bash" class="skill-icon-img" />
+                <p>Bash</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 3: Observability & Security -->
+        <div class="skills-category">
+          <h3 class="category-title"><i class="fa-solid fa-shield-halved me-2 text-success"></i> Observability &amp; Security</h3>
+          <div class="row g-3 text-center">
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="skills-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vault/vault-original.svg" height="40" alt="Vault logo" class="skill-icon-img" />
+                <p>HashiCorp Vault</p>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="skills-card">
+                <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/sonarqube.png" height="40" alt="SonarQube logo" class="skill-icon-img" />
+                <p>SonarQube</p>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="skills-card">
+                <img src="https://www.vectorlogo.zone/logos/prometheusio/prometheusio-icon.svg" height="40" alt="Prometheus logo" class="skill-icon-img" />
+                <p>Prometheus</p>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="skills-card">
+                <img src="https://www.vectorlogo.zone/logos/grafana/grafana-icon.svg" height="40" alt="Grafana logo" class="skill-icon-img" />
+                <p>Grafana</p>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="skills-card">
+                <img src="https://www.vectorlogo.zone/logos/datadoghq/datadoghq-icon.svg" height="40" alt="Datadog logo" class="skill-icon-img" />
+                <p>Datadog</p>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="skills-card">
+                <img src="https://www.vectorlogo.zone/logos/fluentd/fluentd-icon.svg" height="40" alt="FluentBit logo" class="skill-icon-img" />
+                <p>FluentBit</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 4: Incident Management & Networking -->
+      <div class="skills-category">
+        <h3 class="category-title"><i class="fa-solid fa-headset me-2 text-success"></i> Incident Management &amp; Collaboration</h3>
+        <div class="row g-3 text-center">
+          
+          <!-- ServiceNow -->
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="skills-card">
+              <img src="https://www.vectorlogo.zone/logos/servicenow/servicenow-icon.svg" height="40" alt="ServiceNow logo" class="skill-icon-img" />
+              <p>ServiceNow</p>
+            </div>
+          </div>
+
+          <!-- PagerDuty -->
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="skills-card">
+              <img src="https://www.vectorlogo.zone/logos/pagerduty/pagerduty-icon.svg" height="40" alt="PagerDuty logo" class="skill-icon-img" />
+              <p>PagerDuty</p>
+            </div>
+          </div>
+
+          <!-- Slack -->
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="skills-card">
+              <img src="https://www.vectorlogo.zone/logos/slack/slack-icon.svg" height="40" alt="Slack logo" class="skill-icon-img" />
+              <p>Slack</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </section>
     <!-- /Skills Section -->
 
-
     <!-- Resume Section -->
-    <section id="resume" class="resume section">
-
-      <!-- Section Title -->
+    <section id="resume" class="resume section bg-body-tertiary">
       <div class="container section-title" data-aos="fade-up">
         <h2>Resume</h2>
-        <p>A snapshot of my career journey, roles, and the skills I bring to the table.</p>
-      </div><!-- End Section Title -->
+        <p>A overview of my professional experience, education, and technical certifications in Cloud & DevOps.</p>
+      </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-5">
 
+          <!-- Left Column: Work Experience -->
+          <div class="col-lg-6">
+            <h3 class="resume-title mb-4"><i class="bi bi-briefcase me-2"></i>Work Experience</h3>
+
+            <div class="resume-item position-relative pb-4 ps-4 border-start border-2 border-primary">
+              <div class="resume-badge position-absolute rounded-circle bg-primary"></div>
+              <h4 class="h5 fw-bold mb-1">Specialist Cloud Engineer</h4>
+              <h5 class="text-primary fw-medium mb-2 fs-6">2026 - Present</h5>
+              <p class="fst-italic text-secondary mb-2">MSD India | Hyderabad, India</p>
+              <ul class="ps-3 text-secondary">
+                <li>Provisioned automated and scalable <strong>AWS cloud infrastructure using Terraform</strong> IaC templates.</li>
+                <li>Engineered custom <strong>Python & Bash automation scripts</strong> for batch workloads and Linux environments.</li>
+                <li>Configured <strong>Fluent Bit for centralized logging</strong> across multi-region cloud deployments.</li>
+              </ul>
+            </div>
+
+            <div class="resume-item position-relative pb-4 ps-4 border-start border-2 border-primary">
+              <div class="resume-badge position-absolute rounded-circle bg-primary"></div>
+              <h4 class="h5 fw-bold mb-1">System Engineer</h4>
+              <h5 class="text-primary fw-medium mb-2 fs-6">2024 - 2026</h5>
+              <p class="fst-italic text-secondary mb-2">Tata Consultancy Services | Hyderabad, India</p>
+              <ul class="ps-3 text-secondary">
+                <li>Architected high-availability <strong>AWS infrastructure using Terraform</strong> and cloud-native practices.</li>
+                <li>Automated zero-downtime <strong>Kubernetes releases</strong> using <strong>GitLab CI & Argo CD GitOps</strong> pipelines.</li>
+                <li>Optimized CI/CD build scripts to speed up deployment times for microservices applications.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Right Column: Education & Certifications -->
+          <div class="col-lg-6">
+            <!-- Education Sub-Section -->
+            <h3 class="resume-title mb-4"><i class="bi bi-mortarboard"></i> Education</h3>
+
+            <div class="resume-item position-relative pb-4 ps-4 border-start border-2 border-primary">
+              <div class="resume-badge position-absolute rounded-circle bg-primary"></div>
+              <h4 class="h5 fw-bold mb-1">Bachelor of Technology in Computer Science</h4>
+              <h5 class="text-primary fw-medium mb-2 fs-6">2016 - 2020</h5>
+              <p class="fst-italic text-secondary mb-2">Jawaharlal Nehru Technological University Hyderabad</p>
+              <p class="text-secondary">Focused on Operating Systems, Computer Networks, Distributed Computing, and Cloud Infrastructure Architecture.</p>
+            </div>
+
+            <!-- Certifications Sub-Section -->
+            <h3 class="resume-title my-4"><i class="bi bi-award me-2"></i>Certifications</h3>
+
+            <div class="resume-item position-relative pb-4 ps-4 border-start border-2 border-primary">
+              <div class="resume-badge position-absolute rounded-circle bg-primary"></div>
+              <h4 class="h5 fw-bold mb-1">Certified Kubernetes Administrator (CKA)</h4>
+              <h5 class="text-primary fw-medium mb-2 fs-6">Issued 2026 | Linux Foundation</h5>
+              <p class="text-secondary mb-0">Validation of expertise in Kubernetes cluster architecture, storage, networking, security, and troubleshooting.</p>
+            </div>
+
+            <div class="resume-item position-relative pb-4 ps-4 border-start border-2 border-primary">
+              <div class="resume-badge position-absolute rounded-circle bg-primary"></div>
+              <h4 class="h5 fw-bold mb-1">AWS Certified Solutions Architect – Associate</h4>
+              <h5 class="text-primary fw-medium mb-2 fs-6">Issued 2023 | Amazon Web Services</h5>
+              <p class="text-secondary mb-0">Demonstrates competence in architecting secure, resilient, and high-performing cloud solutions on AWS.</p>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- /Resume Section -->
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Featured Projects</h2>
+        <p>A selection of projects showcasing my expertise in Cloud, DevOps, and Automation.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-4">
 
-          <div class="row">
-          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
-            <div class="experience-section">
-              <div class="section-header">
-
-                <!-- Experience Section -->
-                <h2><i class="bi bi-briefcase"></i> Professional Journey</h2>
-                <!-- <p class="section-subtitle">A career shaped around Cloud, DevOps, and Security — growing from Associate DevOps Engineer to Senior DevOps Engineer, building expertise in automation and secure infrastructure to help teams innovate with confidence.</p> -->
+          <!-- Project 1 -->
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up">
+            <div class="project-card border rounded shadow-sm overflow-hidden bg-body w-100">
+              <div class="project-image position-relative overflow-hidden">
+                <img src="/assets/images/projects/jenkins-stack.png" alt="Setup Jenkins On Kubernetes Cluster" class="img-fluid w-100" loading="lazy">
+                <a href="https://github.com/ahsan598/portfolio-projects/blob/main/How%20To%20Setup%20-%20Jenkins%20On%20Kubernetes%20Cluster.md" target="_blank" rel="noopener" class="project-redirect-btn" aria-label="View Project Source Code">
+                  <i class="bi bi-arrow-up-right"></i>
+                </a>
               </div>
-
-              <div class="experience-cards">
-                <div class="experience-card" data-aos="zoom-in" data-aos-delay="300">
-                  <div class="card-header">
-                    <div class="role-info">
-                      <h3>System Engineer</h3>
-                      <p class="company"><i class="bi bi-building"></i> Tata Consultancy Services</p>
-                    </div>
-                    <span class="duration">2024 - Present</span>
-                  </div>
-                  <div class="card-body">
-                    <!-- <p>Senior DevOps Engineer driving automation, cloud-native infrastructure, and secure, reliable deployments.</p> -->
-                    <ul class="achievements">
-                      <li>Built and maintained automated Terraform & Kubernetes workflows using GitLab CI and Argo CD.</li>
-                      <li>Managed production clusters, enforced security policies, and resolved cluster issues.</li>
-                      <li>Improved deployment reliability and streamlined CI/CD pipelines for faster releases.</li>
-                    </ul>
-                  </div>
+              <div class="project-content p-4">
+                <h3 class="h5 fw-bold">Setup Jenkins On Kubernetes Cluster</h3>
+                <p class="text-secondary fs-6">Learn how to deploy a scalable, high-availability Jenkins master-agent setup on Kubernetes using Helm charts and persistent storage volumes.</p>
+                <div class="project-tags d-flex flex-wrap gap-2 mt-3">
+                  <span class="badge badge-tech badge-purple">CI/CD</span>
+                  <span class="badge badge-tech badge-cyan">Docker</span>
+                  <span class="badge badge-tech badge-green">Kubernetes</span>
                 </div>
-
-                <div class="experience-card" data-aos="zoom-in" data-aos-delay="400">
-                  <div class="card-header">
-                    <div class="role-info">
-                      <h3>Associate Consultant</h3>
-                      <p class="company"><i class="bi bi-building"></i> Capgemini Technology Services India Ltd</p>
-                    </div>
-                    <span class="duration">2021 - 2024</span>
-                  </div>
-                  <div class="card-body">
-                    <!-- <p>DevOps Engineer driving automated deployments, CI/CD pipelines, and cloud infrastructure reliability.</p> -->
-                    <ul class="achievements">
-                      <li>Automated server configs and application deployments using Ansible and Jenkins.</li>
-                      <li>Monitored and optimized AWS infrastructure with ELK Stack and Dynatrace.</li>
-                      <li>Implemented process improvements to enhance scalability, performance, and security.</li>
-                    </ul>
-                  </div>
-                </div>
-
-                <!-- <div class="experience-card" data-aos="zoom-in" data-aos-delay="500">
-                  <div class="card-header">
-                    <div class="role-info">
-                      <h3>Product Development Specialist</h3>
-                      <h4>Adipiscing Technologies</h4>
-                    </div>
-                    <span class="duration">2015 - 2018</span>
-                  </div>
-                  <div class="card-body">
-                    <p>Nam quam nunc blandit vel luctus pulvinar hendrerit id lorem maecenas nec odio et ante tincidunt tempus donec vitae sapien ut.</p>
-                  </div>
-                </div> -->
               </div>
             </div>
           </div>
 
-          <!-- Education Section -->
-          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
-            <div class="education-section">
-              <div class="section-header">
-                <h2><i class="bi bi-mortarboard"></i> Academic Excellence</h2>
-                <!-- <p class="section-subtitle">Graduated with a B.Tech in Computer Science & Engineering from JNTUH, building the foundation for my passion in Cloud and DevOps.</p> -->
+          <!-- Project 2 -->
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-card border rounded shadow-sm overflow-hidden bg-body w-100">
+              <div class="project-image position-relative overflow-hidden">
+                <img src="/assets/images/projects/efk-stack.png" alt="Setup ELK Stack On Kubernetes Cluster" class="img-fluid w-100" loading="lazy">
+                <a href="https://github.com/ahsan598/portfolio-projects/blob/main/How%20to%20Setup%20-%20EFK%20Stack%20on%20Kubernetes.md" target="_blank" rel="noopener" class="project-redirect-btn" aria-label="View Project Source Code">
+                  <i class="bi bi-arrow-up-right"></i>
+                </a>
               </div>
-
-              <div class="education-timeline">
-                <div class="timeline-track"></div>
-
-                <div class="education-item" data-aos="slide-up" data-aos-delay="300">
-                  <div class="timeline-marker"></div>
-                  <div class="education-content">
-                    <div class="degree-header">
-                      <h3>Bachelors of Technology</h3>
-                      <span class="year">2016 - 2020</span>
-                    </div>
-                    <p class="institution"><i class="bi bi-building"></i> Jawaharlal Nehru Technological University Hyderabad</p>
-                    <p>Specialized in Computer Science and Engineering.</p>
-                  </div>
+              <div class="project-content p-4">
+                <h3 class="h5 fw-bold">Setup ELK Stack On Kubernetes Cluster</h3>
+                <p class="text-secondary fs-6">Step-by-step implementation guide for centralizing cluster logs using Elasticsearch, Fluentd/Fluent Bit, and Kibana dashboard visualizing metrics.</p>
+                <div class="project-tags d-flex flex-wrap gap-2 mt-3">
+                  <span class="badge badge-tech badge-orange">ELK Stack</span>
+                  <span class="badge badge-tech badge-cyan">Docker</span>
+                  <span class="badge badge-tech badge-green">Kubernetes</span>
                 </div>
-
-                <div class="education-item" data-aos="slide-up" data-aos-delay="400">
-                  <div class="timeline-marker"></div>
-                  <div class="education-content">
-                    <div class="degree-header">
-                      <h3>Senior Secondary (XII)</h3>
-                      <span class="year">2014 - 2016</span>
-                    </div>
-                    <p class="institution"><i class="bi bi-building"></i> Agarwal Junior College For Boys</p>
-                    <p>Focused in Science and Mathematics Stream.</p>
-                  </div>
-                </div>
-
-                <!-- <div class="education-item" data-aos="slide-up" data-aos-delay="500">
-                  <div class="timeline-marker"></div>
-                  <div class="education-content">
-                    <div class="degree-header">
-                      <h3>Certificate in Digital Innovation</h3>
-                      <span class="year">2020</span>
-                    </div>
-                    <h4 class="institution">Ligula Academy</h4>
-                    <p>Etiam sit amet orci eget eros faucibus tincidunt duis leo sed fringilla mauris sit amet nibh donec sodales sagittis magna.</p>
-                  </div>
-                </div> -->
               </div>
-
             </div>
-          
+          </div>
 
-
-            <!-- Certifications Section (timeline, same as education) -->
-            <div class="education-section certifications-section" data-aos="fade-up" data-aos-delay="200">
-              <div class="section-header">
-                <h2><i class="bi bi-award"></i> Certifications</h2>
+          <!-- Project 3 -->
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="project-card border rounded shadow-sm overflow-hidden bg-body w-100">
+              <div class="project-image position-relative overflow-hidden">
+                <img src="/assets/images/projects/argocd-stack.png" alt="How to Setup Argo CD on Kubernetes" class="img-fluid w-100" loading="lazy">
+                <a href="https://github.com/ahsan598/portfolio-projects/blob/main/How%20to%20Setup%20-%20Argo%20CD%20on%20Kubernetes.md" target="_blank" rel="noopener" class="project-redirect-btn" aria-label="View Project Source Code">
+                  <i class="bi bi-arrow-up-right"></i>
+                </a>
               </div>
-
-              <div class="education-timeline">
-                <div class="timeline-track"></div>
-
-                <div class="education-item" data-aos="slide-up" data-aos-delay="300">
-                  <div class="timeline-marker"></div>
-                  <div class="education-content">
-                    <div class="degree-header">
-                      <h3>Certified Kubernetes Administrator (CKA)</h3>
-                      <span class="year">2025</span>
-                    </div>
-                    <!-- <p class="institution"></i> The Linux Foundation</p> -->
-                    <!-- <p>Validated Kubernetes cluster administration, troubleshooting, and networking skills.</p> -->
-                  </div>
-                </div>
-
-                <div class="education-item" data-aos="slide-up" data-aos-delay="400">
-                  <div class="timeline-marker"></div>
-                  <div class="education-content">
-                    <div class="degree-header">
-                      <h3>AWS Certified Solutions Architect – Associate</h3>
-                      <span class="year">2023</span>
-                    </div>
-                    <!-- <p class="institution"><i class="bi bi-building"></i> Amazon Web Services</p> -->
-                    <!-- <p>Designed resilient, cost-optimized AWS architectures with security best practices.</p> -->
-                  </div>
+              <div class="project-content p-4">
+                <h3 class="h5 fw-bold">How to Setup Argo CD on Kubernetes</h3>
+                <p class="text-secondary fs-6">Automate continuous deployment following GitOps practices by connecting Argo CD with GitHub repositories for real-time state synchronization.</p>
+                <div class="project-tags d-flex flex-wrap gap-2 mt-3">
+                  <span class="badge badge-tech badge-red">Argo CD</span>
+                  <span class="badge badge-tech badge-cyan">Docker</span>
+                  <span class="badge badge-tech badge-green">Kubernetes</span>
                 </div>
               </div>
-
             </div>
           </div>
 
         </div>
       </div>
-
-    </section><!-- /Resume Section -->
-
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
-        <p>A selection of projects showcasing my expertise in Cloud, DevOps, and Automation.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <div class="row">
-            <div class="col-lg-3 filter-sidebar">
-              <div class="filters-wrapper" data-aos="fade-right" data-aos-delay="150">
-                <ul class="portfolio-filters isotope-filters">
-                  <li data-filter="*" class="filter-active">All Projects</li>
-                  <li data-filter=".filter-terraform">Terraform</li>
-                  <!-- <li data-filter=".filter-k8s">Kubernetes</li>
-                  <li data-filter=".filter-cicd">CI/CD</li> -->
-                </ul>
-              </div>
-            </div>
-
-            <div class="col-lg-9">
-              <div class="row gy-4 portfolio-container isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-terraform">
-                  <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/terraform/aws-webapp.webp" class="img-fluid" alt="Portfolio Image" loading="lazy">
-                    <!-- <img src="assets/img/portfolio/terraform/aws-webapp.webp" alt="Not Found" class="img-fluid" loading="lazy" style="display: block; margin: 0 auto; max-width: 100%; height: auto; padding: 10px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); opacity: 0.95; border: none;"> -->
-
-                    <div class="portfolio-info">
-                      <div class="content">
-                        <span class="category">Terraform</span>
-                        <h4>AWS Multi-Tier Infrastructure</h4>
-                        <div class="portfolio-links">
-                          <a href="assets/img/portfolio/terraform/aws-webapp.webp" class="glightbox" title="AWS Multi-Tier Infrastructure"><i class="bi bi-plus-lg"></i></a>
-                          <a href="./projects/terraform-iac-project-1.html" title="More Details"><i class="bi bi-arrow-right"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- End Portfolio Item -->
-
-                <!-- <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-K8s">
-                  <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-2.webp" class="img-fluid" alt="Portfolio Image" loading="lazy">
-                    <div class="portfolio-info">
-                      <div class="content">
-                        <span class="category">Kubernetes</span>
-                        <h4>Woodcraft Design</h4>
-                        <div class="portfolio-links">
-                          <a href="assets/img/portfolio/portfolio-2.webp" class="glightbox" title="Woodcraft Design"><i class="bi bi-plus-lg"></i></a>
-                          <a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div> -->
-                <!-- End Portfolio Item -->
-
-                <!-- <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-cicd">
-                  <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-portrait-2.webp" class="img-fluid" alt="Portfolio Image" loading="lazy">
-                    <div class="portfolio-info">
-                      <div class="content">
-                        <span class="category">CI/CD</span>
-                        <h4>Classic Beauty</h4>
-                        <div class="portfolio-links">
-                          <a href="assets/img/portfolio/portfolio-portrait-2.webp" class="glightbox" title="Classic Beauty"><i class="bi bi-plus-lg"></i></a>
-                          <a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div> -->
-                <!-- End Portfolio Item -->
-
-                <!-- <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-terraform">
-                  <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-5.webp" class="img-fluid" alt="Portfolio Image" loading="lazy">
-                    <div class="portfolio-info">
-                      <div class="content">
-                        <span class="category">Terraform</span>
-                        <h4>Urban Stories</h4>
-                        <div class="portfolio-links">
-                          <a href="assets/img/portfolio/portfolio-5.webp" class="glightbox" title="Urban Stories"><i class="bi bi-plus-lg"></i></a>
-                          <a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div> -->
-                <!-- End Portfolio Item -->
-
-                <!-- <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-K8s">
-                  <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-6.webp" class="img-fluid" alt="Portfolio Image" loading="lazy">
-                    <div class="portfolio-info">
-                      <div class="content">
-                        <span class="category">Kubernetes</span>
-                        <h4>Digital Experience</h4>
-                        <div class="portfolio-links">
-                          <a href="assets/img/portfolio/portfolio-6.webp" class="glightbox" title="Digital Experience"><i class="bi bi-plus-lg"></i></a>
-                          <a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div> -->
-                <!-- End Portfolio Item -->
-
-              </div><!-- End Portfolio Container -->
-            </div>
-          </div>
-
-        </div>
-      </div>
-
     </section>
-    <!-- /Portfolio Section -->
+    <!-- /Projects Section -->
 
-    
     <!-- Contact Section -->
     <section id="contact" class="contact section">
-
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Contact</h2>
         <p>Always happy to connect — whether it’s suggestions, collaborations, or just a hello!</p>
-      </div><!-- End Section Title -->
+      </div>
 
       <div class="container">
-
         <div class="row g-4 g-lg-5">
+
           <div class="col-lg-5">
             <div class="info-box">
               <h3>Contact Info</h3>
-              <p>Reach out anytime via email or phone — I’m always happy to chat!</p>
+              <p>Reach out anytime via email or social platforms — I’m always happy to chat!</p>
 
               <div class="info-item">
-                <div class="icon-box">
-                  <i class="bi bi-geo-alt"></i>
-                </div>
-                <div class="content">
-                  <h4>Location</h4>
-                  <!-- <p>Pathergatti Road, Charminar</p> -->
-                  <p>Hyderabad, Telangana, IN</p>
-                </div>
-              </div>
-
-              <div class="info-item">
-                <div class="icon-box">
-                  <i class="bi bi-telephone"></i>
-                </div>
-                <div class="content">
-                  <h4>Phone Number</h4>
-                  <p>+91 837 4315 451</p>
-                </div>
-              </div>
-
-              <div class="info-item">
-                <div class="icon-box">
-                  <i class="bi bi-envelope"></i>
-                </div>
+                <div class="icon-box"><i class="bi bi-envelope"></i></div>
                 <div class="content">
                   <h4>Email Address</h4>
-                  <p>mdahsan060@gmail.com</p>
+                  <p><a href="mailto:mdahsan060@gmail.com" style="color: inherit; text-decoration: none;">mdahsan060@gmail.com</a></p>
                 </div>
               </div>
+
+              <div class="info-item">
+                <div class="icon-box"><i class="bi bi-linkedin"></i></div>
+                <div class="content">
+                  <h4>LinkedIn</h4>
+                  <p><a href="https://www.linkedin.com/in/ahsan12/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">linkedin.com/in/ahsan12</a></p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="icon-box"><i class="bi bi-github"></i></div>
+                <div class="content">
+                  <h4>GitHub</h4>
+                  <p><a href="https://github.com/ahsan598" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">github.com/ahsan598</a></p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="icon-box"><i class="bi bi-journal-text"></i></div>
+                <div class="content">
+                  <h4>Dev.to</h4>
+                  <p><a href="https://dev.to/ahsan598" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">dev.to/ahsan598</a></p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="icon-box"><i class="bi bi-discord"></i></div>
+                <div class="content">
+                  <h4>Discord</h4>
+                  <p><a href="https://discord.com/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">Connect on Discord</a></p>
+                </div>
+              </div>
+
             </div>
           </div>
 
+        <!-- For GitHub Pages (static hosting): use Formspree -->
+        <!-- For server hosting (PHP supported): switch to forms/contact.php -->
           <div class="col-lg-7">
             <div class="contact-form">
               <h3>Get In Touch</h3>
               <p>Have questions, ideas, or just want to say hi? Send me a message, and I’ll reply promptly!</p>
 
-              <!-- For GitHub Pages (static hosting): use Formspree -->
-              <!-- For server hosting (PHP supported): switch to forms/contact.php -->
-
               <form action="https://formspree.io/f/mkgvzrgl" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
                 <div class="row gy-4">
+                  <div class="col-md-6">
+                    <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                  </div>
 
                   <div class="col-md-6">
-                    <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-                  </div>
-
-                  <div class="col-md-6 ">
-                    <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                    <input type="email" class="form-control" name="email" placeholder="Your Email" required>
                   </div>
 
                   <div class="col-12">
-                    <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                    <input type="text" class="form-control" name="subject" placeholder="Subject" required>
                   </div>
 
                   <div class="col-12">
-                    <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                    <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
                   </div>
 
                   <div class="col-12 text-center">
@@ -904,32 +642,28 @@
 
                     <button type="submit" class="btn">Send Message</button>
                   </div>
-
                 </div>
               </form>
-
             </div>
           </div>
 
         </div>
       </div>
-
-    </section><!-- /Contact Section -->
+    </section>
+    <!-- /Contact Section -->
 
   </main>
 
+  
+  <!-- Footer Section -->
   <footer id="footer" class="footer position-relative">
-
     <div class="container">
-      <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">SnapFolio 2025</strong> <span>All Rights Reserved</span></p>
-      </div>
-      <div class="credits">
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      <div class="copyright text-center">
+        <p>© 2026 <strong>Ahsan's Portfolio</strong>. All Rights Reserved.</p>
       </div>
     </div>
-
   </footer>
+  <!-- /Footer Section -->
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
